@@ -46,7 +46,7 @@ public class SolrService
 		SolrMasterArtist result = new SolrMasterArtist();
 		result.id = (String) firstSolrDoc.getFieldValue("id");
 		result.masterArtistName = (String) firstSolrDoc.getFieldValue("masterArtistName");
-		result.masterArtistId = (Integer) firstSolrDoc.getFieldValue("masterArtistId");
+		result.masterArtistId = (String ) firstSolrDoc.getFieldValue("masterArtistId");
 		return result;
 	}
 
