@@ -1,9 +1,6 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
-import org.apache.solr.common.SolrDocument;
-import org.apache.solr.common.SolrDocumentList;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.impl.CommonsHttpSolrServer;
 import org.apache.solr.client.solrj.response.QueryResponse;
@@ -15,20 +12,6 @@ public class SolrService
 	String requestHandlerName = "standard";
 	String solrMasterArtistUrl = "http://slave-solr-systest.7digital.systest:8080/solr/masterartist/";
 	
-	public SolrMasterArtist searchMasterArtist(String searchString) 
-	{
-
-		return searchMasterArtists(searchString).get(0);
-	}
-
-	private SolrQuery configureQuery(String searchString) 
-	{
-		SolrQuery query = new SolrQuery();
-		query.setQuery("text:" + searchString);
-		query.setQueryType(requestHandlerName);
-		return query;
-	}
-
 	public List<SolrMasterArtist> searchMasterArtists(String searchString) {
 		List<SolrMasterArtist> solrMasterArtists = new ArrayList<SolrMasterArtist>();
 		try
@@ -47,4 +30,20 @@ public class SolrService
 		}
 		return solrMasterArtists;
 	}
+	
+	public SolrMasterArtist searchMasterArtist(String searchString) 
+	{
+
+		return searchMasterArtists(searchString).get(0);
+	}
+
+	private SolrQuery configureQuery(String searchString) 
+	{
+		SolrQuery query = new SolrQuery();
+		query.setQuery("text:" + searchString);
+		query.setQueryType(requestHandlerName);
+		return query;
+	}
+
+	
 }
