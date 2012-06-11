@@ -17,21 +17,8 @@ public class SolrService
 	
 	public SolrMasterArtist searchMasterArtist(String searchString) 
 	{
-		SolrMasterArtist solrMasterArtist = new SolrMasterArtist ();
-		try
-		{
-			SolrServer solrSvr = new CommonsHttpSolrServer(solrMasterArtistUrl, new HttpClient());
-			SolrQuery query = configureQuery(searchString);	
-			QueryResponse res = solrSvr.query(query);
-			SolrMasterArtistMapper mapper = new SolrMasterArtistMapper();
-			solrMasterArtist = mapper.Map(res.getResults()).get(0);	
-		}
-		catch(Exception ex)
-		{
-			System.out.print(ex.getMessage());
-			ex.printStackTrace();	
-		}
-		return solrMasterArtist;
+
+		return searchMasterArtists(searchString).get(0);
 	}
 
 	private SolrQuery configureQuery(String searchString) 
