@@ -47,9 +47,4 @@ public class SolrService
 		result.id = (String) firstSolrDoc.getFieldValue("id");
 		return result;
 	}
-
-	public SolrMasterArtist[] searchMasterArtists(String searchString) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }
