@@ -1,0 +1,15 @@
+
+public class ConsoleSolrTester 
+{
+	public static void main(String[] args){
+		System.out.print("Hello World!");
+		String name;
+	       int age;
+	       Scanner in = new Scanner(System.in);
+
+	       // Reads a single line from the console 
+	       // and stores into name variable
+	       name = in.nextLine();
+	}
+}
+
