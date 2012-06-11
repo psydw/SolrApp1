@@ -30,7 +30,7 @@ public class SolrTests extends TestCase{
 		SolrService solrService = new SolrService();
 		String searchString = "pink floyd";
 		SolrMasterArtist solrmasterArtist = solrService.searchMasterArtist(searchString);
-		Assert.assertEquals("pink floyd", solrmasterArtist.masterArtistName);
+		Assert.assertEquals("Pink Floyd", solrmasterArtist.masterArtistName);
 	}
 	
 	public void test_GetDocFromSolrService_mapsSortName_AcceptanceTest()
