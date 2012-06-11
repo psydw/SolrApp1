@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="SolrTests" project="SolrTestApp1" tests="7" started="7" failures="0" errors="6" ignored="0">
+  <testsuite name="SolrTests" time="0.033">
+    <testcase name="test_basic" classname="SolrTests" time="0.011"/>
+    <testcase name="test_GetDocFromSolrService_UnitTest" classname="SolrTests" time="0.011">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The type of the expression must be an array type but it resolved to List&lt;SolrMasterArtist&gt;
+&#13;
+	at SolrService.searchMasterArtist(SolrService.java:26)&#13;
+	at SolrTests.test_GetDocFromSolrService_UnitTest(SolrTests.java:16)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at junit.framework.TestCase.runTest(TestCase.java:168)&#13;
+	at junit.framework.TestCase.runBare(TestCase.java:134)&#13;
+	at junit.framework.TestResult$1.protect(TestResult.java:110)&#13;
+	at junit.framework.TestResult.runProtected(TestResult.java:128)&#13;
+	at junit.framework.TestResult.run(TestResult.java:113)&#13;
+	at junit.framework.TestCase.run(TestCase.java:124)&#13;
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)&#13;
+	at junit.framework.TestSuite.run(TestSuite.java:238)&#13;
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="test_GetDocFromSolrService_AcceptanceTest" classname="SolrTests" time="0.011">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The type of the expression must be an array type but it resolved to List&lt;SolrMasterArtist&gt;
+&#13;
+	at SolrService.searchMasterArtist(SolrService.java:26)&#13;
+	at SolrTests.test_GetDocFromSolrService_AcceptanceTest(SolrTests.java:24)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at junit.framework.TestCase.runTest(TestCase.java:168)&#13;
+	at junit.framework.TestCase.runBare(TestCase.java:134)&#13;
+	at junit.framework.TestResult$1.protect(TestResult.java:110)&#13;
+	at junit.framework.TestResult.runProtected(TestResult.java:128)&#13;
+	at junit.framework.TestResult.run(TestResult.java:113)&#13;
+	at junit.framework.TestCase.run(TestCase.java:124)&#13;
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)&#13;
+	at junit.framework.TestSuite.run(TestSuite.java:238)&#13;
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="test_GetDocFromSolrService_mapsName_AcceptanceTest" classname="SolrTests" time="0.0">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The type of the expression must be an array type but it resolved to List&lt;SolrMasterArtist&gt;
+&#13;
+	at SolrService.searchMasterArtist(SolrService.java:26)&#13;
+	at SolrTests.test_GetDocFromSolrService_mapsName_AcceptanceTest(SolrTests.java:32)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at junit.framework.TestCase.runTest(TestCase.java:168)&#13;
+	at junit.framework.TestCase.runBare(TestCase.java:134)&#13;
+	at junit.framework.TestResult$1.protect(TestResult.java:110)&#13;
+	at junit.framework.TestResult.runProtected(TestResult.java:128)&#13;
+	at junit.framework.TestResult.run(TestResult.java:113)&#13;
+	at junit.framework.TestCase.run(TestCase.java:124)&#13;
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)&#13;
+	at junit.framework.TestSuite.run(TestSuite.java:238)&#13;
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="test_GetDocFromSolrService_mapsSortName_AcceptanceTest" classname="SolrTests" time="0.0">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The type of the expression must be an array type but it resolved to List&lt;SolrMasterArtist&gt;
+&#13;
+	at SolrService.searchMasterArtist(SolrService.java:26)&#13;
+	at SolrTests.test_GetDocFromSolrService_mapsSortName_AcceptanceTest(SolrTests.java:40)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at junit.framework.TestCase.runTest(TestCase.java:168)&#13;
+	at junit.framework.TestCase.runBare(TestCase.java:134)&#13;
+	at junit.framework.TestResult$1.protect(TestResult.java:110)&#13;
+	at junit.framework.TestResult.runProtected(TestResult.java:128)&#13;
+	at junit.framework.TestResult.run(TestResult.java:113)&#13;
+	at junit.framework.TestCase.run(TestCase.java:124)&#13;
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)&#13;
+	at junit.framework.TestSuite.run(TestSuite.java:238)&#13;
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="test_GetDocFromSolrService_mapsUrl_AcceptanceTest" classname="SolrTests" time="0.0">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The type of the expression must be an array type but it resolved to List&lt;SolrMasterArtist&gt;
+&#13;
+	at SolrService.searchMasterArtist(SolrService.java:26)&#13;
+	at SolrTests.test_GetDocFromSolrService_mapsUrl_AcceptanceTest(SolrTests.java:48)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at junit.framework.TestCase.runTest(TestCase.java:168)&#13;
+	at junit.framework.TestCase.runBare(TestCase.java:134)&#13;
+	at junit.framework.TestResult$1.protect(TestResult.java:110)&#13;
+	at junit.framework.TestResult.runProtected(TestResult.java:128)&#13;
+	at junit.framework.TestResult.run(TestResult.java:113)&#13;
+	at junit.framework.TestCase.run(TestCase.java:124)&#13;
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)&#13;
+	at junit.framework.TestSuite.run(TestSuite.java:238)&#13;
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="test_GetTop10DocumentsFromSolrService_AcceptanceTest" classname="SolrTests" time="0.0">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List&lt;SolrMasterArtist&gt; to SolrMasterArtist[]
+&#13;
+	at SolrService.searchMasterArtists(SolrService.java:60)&#13;
+	at SolrTests.test_GetTop10DocumentsFromSolrService_AcceptanceTest(SolrTests.java:56)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at junit.framework.TestCase.runTest(TestCase.java:168)&#13;
+	at junit.framework.TestCase.runBare(TestCase.java:134)&#13;
+	at junit.framework.TestResult$1.protect(TestResult.java:110)&#13;
+	at junit.framework.TestResult.runProtected(TestResult.java:128)&#13;
+	at junit.framework.TestResult.run(TestResult.java:113)&#13;
+	at junit.framework.TestCase.run(TestCase.java:124)&#13;
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)&#13;
+	at junit.framework.TestSuite.run(TestSuite.java:238)&#13;
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

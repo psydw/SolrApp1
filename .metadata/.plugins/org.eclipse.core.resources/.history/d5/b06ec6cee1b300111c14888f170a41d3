@@ -24,7 +24,7 @@ public class SolrService
 			SolrQuery query = configureQuery(searchString);	
 			QueryResponse res = solrSvr.query(query);
 			SolrMasterArtistMapper mapper = new SolrMasterArtistMapper();
-			solrMasterArtist = mapper.Map(res.getResults()).get(0);	
+			solrMasterArtist = mapper.Map(res.getResults())[0];	
 		}
 		catch(Exception ex)
 		{

@@ -8,3 +8,6 @@
 1339426574178	Extract method 'ConfigureQuery'
 1339426582774	Rename method 'ConfigureQuery'
 1339426628089	Inline local variable 'results'
+1339430340198	Extract Class...
+1339430388142	Delete element
+1339431500085	Rename local variable 'firstSolrDoc'

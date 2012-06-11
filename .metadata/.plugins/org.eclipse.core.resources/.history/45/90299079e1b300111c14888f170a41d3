@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrDocumentList;
@@ -24,7 +22,7 @@ public class SolrService
 			SolrQuery query = configureQuery(searchString);	
 			QueryResponse res = solrSvr.query(query);
 			SolrMasterArtistMapper mapper = new SolrMasterArtistMapper();
-			solrMasterArtist = mapper.Map(res.getResults()).get(0);	
+			solrMasterArtist = mapper.Map(res.getResults());	
 		}
 		catch(Exception ex)
 		{
@@ -42,22 +40,8 @@ public class SolrService
 		return query;
 	}
 
-	public List<SolrMasterArtist> searchMasterArtists(String searchString) {
-		List<SolrMasterArtist> solrMasterArtists = new ArrayList<SolrMasterArtist>();
-		try
-		{
-			SolrServer solrSvr = new CommonsHttpSolrServer(solrMasterArtistUrl, new HttpClient());
-			SolrQuery query = configureQuery(searchString);	
-			QueryResponse res = solrSvr.query(query);
-			
-			SolrMasterArtistMapper mapper = new SolrMasterArtistMapper();
-			solrMasterArtists = mapper.Map(res.getResults());	
-		}
-		catch(Exception ex)
-		{
-			System.out.print(ex.getMessage());
-			ex.printStackTrace();	
-		}
-		return solrMasterArtists;
+	public SolrMasterArtist[] searchMasterArtists(String searchString) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

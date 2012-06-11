@@ -1,0 +1,10 @@
+
+public class Mapper {
+	public String requestHandlerName;
+	public String solrMasterArtistUrl;
+
+	public Mapper(String requestHandlerName, String solrMasterArtistUrl) {
+		this.requestHandlerName = requestHandlerName;
+		this.solrMasterArtistUrl = solrMasterArtistUrl;
+	}
+}

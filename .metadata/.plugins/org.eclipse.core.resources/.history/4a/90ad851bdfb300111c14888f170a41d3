@@ -1,6 +1,4 @@
 
-import java.util.List;
-
 import junit.framework.TestCase;
 import org.junit.Assert;
 
@@ -40,7 +38,7 @@ public class SolrTests extends TestCase{
 		SolrService solrService = new SolrService();
 		String searchString = "pink floyd";
 		SolrMasterArtist solrmasterArtist = solrService.searchMasterArtist(searchString);
-		Assert.assertEquals("Pink Floyd", solrmasterArtist.masterArtistSortName);
+		Assert.assertEquals("pink floyd", solrmasterArtist.masterArtistSortName);
 	}
 	
 	public void test_GetDocFromSolrService_mapsUrl_AcceptanceTest()
@@ -55,9 +53,9 @@ public class SolrTests extends TestCase{
 	{
 		SolrService solrService = new SolrService();
 		String searchString = "pink floyd";
-		List<SolrMasterArtist> solrmasterArtist = solrService.searchMasterArtists(searchString);
-		Assert.assertEquals("ma_34_447", solrmasterArtist.get(0).id);
-		Assert.assertEquals("pink-floyd", solrmasterArtist.get(0).masterArtistUrl);
-		Assert.assertNotNull(solrmasterArtist.get(9).id);
+		SolrMasterArtist[] solrmasterArtist = solrService.searchMasterArtists(searchString);
+		Assert.assertEquals("ma_34_447", solrmasterArtist[0].id);
+		Assert.assertEquals("pink-floyd", solrmasterArtist[0].masterArtistUrl);
+		Assert.assertNotNull(solrmasterArtist[9].id);
 	}
 }

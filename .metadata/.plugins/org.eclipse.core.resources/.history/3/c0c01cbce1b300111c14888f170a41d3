@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -24,7 +23,7 @@ public class SolrService
 			SolrQuery query = configureQuery(searchString);	
 			QueryResponse res = solrSvr.query(query);
 			SolrMasterArtistMapper mapper = new SolrMasterArtistMapper();
-			solrMasterArtist = mapper.Map(res.getResults()).get(0);	
+			solrMasterArtist = mapper.Map(res.getResults())[0];	
 		}
 		catch(Exception ex)
 		{
@@ -42,8 +41,8 @@ public class SolrService
 		return query;
 	}
 
-	public List<SolrMasterArtist> searchMasterArtists(String searchString) {
-		List<SolrMasterArtist> solrMasterArtists = new ArrayList<SolrMasterArtist>();
+	public SolrMasterArtist[] searchMasterArtists(String searchString) {
+		List<SolrMasterArtist> solrMasterArtists;
 		try
 		{
 			SolrServer solrSvr = new CommonsHttpSolrServer(solrMasterArtistUrl, new HttpClient());
