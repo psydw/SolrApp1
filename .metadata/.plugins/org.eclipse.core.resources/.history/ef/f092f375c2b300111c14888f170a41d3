@@ -1,0 +1,10 @@
+
+
+public class SolrService {
+
+	public SolrMasterArtist searchMasterArtist(String searchString) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

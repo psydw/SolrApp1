@@ -1,0 +1,11 @@
+package Tests;
+import org.junit.*;
+
+public class SolrTests {
+
+	[Test]
+	public void Get_a_document_from_Solr()
+	{
+		
+	}
+}

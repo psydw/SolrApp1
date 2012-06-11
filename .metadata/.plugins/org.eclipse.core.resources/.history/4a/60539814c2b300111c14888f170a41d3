@@ -1,0 +1,21 @@
+
+import junit.framework.TestCase;
+import org.junit.Assert;
+
+public class SolrTests extends TestCase{
+
+	public void test_basic()
+	{
+		Assert.assertEquals(1,1);
+	}
+	
+	public void test_GetDocFromSolr()
+	{
+		SolrService solrService = new SolrService();
+		String searchString = "pink floyd";
+		SolrMasterArtist solrmasterArtist = solrService.searchMasterArtist(searchString );
+		
+		
+		Assert.assertEquals(1,1);
+	}
+}

@@ -1,0 +1,10 @@
+1339417822772	Move compilation unit
+1339417826968	Delete element
+1339422481109	Extract local variable 'solrMasterArtist'
+1339422504578	Extract local variable 'solrMasterArtist'
+1339426460192	Extract local variable 'RequestHandler'
+1339426495142	Rename field 'url'
+1339426507310	Rename field 'RequestHandler'
+1339426574178	Extract method 'ConfigureQuery'
+1339426582774	Rename method 'ConfigureQuery'
+1339426628089	Inline local variable 'results'

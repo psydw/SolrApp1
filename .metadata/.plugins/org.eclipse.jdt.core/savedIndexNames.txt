@@ -1,0 +1,17 @@
+INDEX VERSION 1.126+C:\Documents and Settings\jamesa\Desktop\psydw\SolrApp1\.metadata\.plugins\org.eclipse.jdt.core
+644261078.index
+1182934233.index
+1674092712.index
+2176689277.index
+3730526690.index
+3270002986.index
+3585733931.index
+3000053649.index
+3289209715.index
+2443438049.index
+2968261348.index
+3277441100.index
+2877109961.index
+1789169078.index
+2594609853.index
+4251467834.index

@@ -1,0 +1,11 @@
+
+public class SolrMasterArtist {
+
+	String id;
+	String masterArtistId;
+	String masterArtistName;
+	String masterArtistUrl;
+	String masterArtistSortName;
+	double rank;
+	
+}

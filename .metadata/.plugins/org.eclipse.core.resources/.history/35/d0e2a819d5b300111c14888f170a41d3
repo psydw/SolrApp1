@@ -1,0 +1,32 @@
+import org.apache.solr.common.SolrDocumentList;
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.client.solrj.impl.CommonsHttpSolrServer;
+import org.apache.solr.client.solrj.response.QueryResponse;
+import org.apache.commons.httpclient.*;
+import org.apache.solr.client.solrj.SolrQuery;
+
+public class SolrService {
+
+	public SolrMasterArtist searchMasterArtist(String searchString) {
+		
+		String url = "http://slave-solr-systest.7digital.systest:8080/solr/masterartist/";
+		SolrMasterArtist solrMasterArtist = new SolrMasterArtist();
+		try{
+		HttpClient httpclient = new HttpClient();
+		SolrServer solrSvr = new CommonsHttpSolrServer(url, httpclient);
+		SolrQuery query = new SolrQuery();
+		query.setQuery("*:*");
+		query.setQueryType("standard");
+		QueryResponse res = solrSvr.query(query);
+		SolrDocumentList results = res.getResults();
+		solrMasterArtist = Map(results);
+		}catch(Exception ex){
+			System.out.print(ex.getMessage());
+			ex.printStackTrace();
+			
+		}
+		
+		return solrMasterArtist;
+	}
+
+}

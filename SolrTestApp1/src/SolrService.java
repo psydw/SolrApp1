@@ -1,0 +1,50 @@
+import java.util.Iterator;
+
+import org.apache.solr.common.SolrDocument;
+import org.apache.solr.common.SolrDocumentList;
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.client.solrj.impl.CommonsHttpSolrServer;
+import org.apache.solr.client.solrj.response.QueryResponse;
+import org.apache.commons.httpclient.HttpClient;
+import org.apache.solr.client.solrj.SolrQuery;
+
+public class SolrService 
+{
+	String requestHandlerName = "standard";
+	String solrMasterArtistUrl = "http://slave-solr-systest.7digital.systest:8080/solr/masterartist/";
+	
+	public SolrMasterArtist searchMasterArtist(String searchString) 
+	{
+		SolrMasterArtist solrMasterArtist = new SolrMasterArtist ();
+		try
+		{
+			SolrServer solrSvr = new CommonsHttpSolrServer(solrMasterArtistUrl, new HttpClient());
+			SolrQuery query = configureQuery(searchString);	
+			QueryResponse res = solrSvr.query(query);
+			solrMasterArtist = Map(res.getResults());	
+		}
+		catch(Exception ex)
+		{
+			System.out.print(ex.getMessage());
+			ex.printStackTrace();	
+		}
+		return solrMasterArtist;
+	}
+
+	private SolrQuery configureQuery(String searchString) 
+	{
+		SolrQuery query = new SolrQuery();
+		query.setQuery("text:" + searchString);
+		query.setQueryType(requestHandlerName);
+		return query;
+	}
+
+	private SolrMasterArtist Map(SolrDocumentList results) 
+	{
+		Iterator<SolrDocument> resultIterator = results.iterator();
+		SolrDocument firstSolrDoc = resultIterator.next();
+		SolrMasterArtist result = new SolrMasterArtist();
+		result.id = (String) firstSolrDoc.getFieldValue("id");
+		return result;
+	}
+}

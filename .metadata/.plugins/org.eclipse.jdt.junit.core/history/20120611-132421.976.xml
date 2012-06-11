@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="SolrTests.Test_Get_a_document_from_Solr_test" project="SolrTestApp1" tests="1" started="0" failures="0" errors="0" ignored="0">
+  <testcase name="Test_Get_a_document_from_Solr_test" classname="Tests.SolrTests" incomplete="true"/>
+</testrun>

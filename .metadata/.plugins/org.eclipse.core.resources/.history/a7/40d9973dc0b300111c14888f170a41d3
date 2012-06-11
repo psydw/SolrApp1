@@ -1,0 +1,13 @@
+package Tests;
+import junit.framework.TestCase;
+
+import org.junit.*;
+
+public class SolrTests extends TestCase{
+
+	
+	public void Get_a_document_from_Solr()
+	{
+		assertEquals(1,1);
+	}
+}

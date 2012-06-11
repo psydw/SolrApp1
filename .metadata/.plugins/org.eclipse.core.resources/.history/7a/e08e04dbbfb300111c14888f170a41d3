@@ -1,0 +1,10 @@
+package Tests;
+
+public class SolrTests {
+
+	[Test]
+	public void Get_a_document_from_Solr()
+	{
+		
+	}
+}

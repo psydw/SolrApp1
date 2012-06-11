@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="SolrTests" project="SolrTestApp1" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="SolrTests" time="0.0">
+    <testcase name="test_basic" classname="SolrTests" time="0.0"/>
+    <testcase name="test_GetDocFromSolrService_UnitTest" classname="SolrTests" time="0.0"/>
+    <testcase name="test_GetDocFromSolrService_AcctanceTest" classname="SolrTests" time="0.0"/>
+  </testsuite>
+</testrun>
